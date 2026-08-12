@@ -1,0 +1,61 @@
+{
+	"name": "devcraftclub/webshare-io-api-wrapper",
+	"description": "PHP wrapper for the WebShare Proxy API with rate limiting, filtering, and error handling",
+	"version": "1.0.0",
+	"type": "library",
+	"license": "AGPL-3.0-or-later",
+	"keywords": [
+		"webshare",
+		"proxy",
+		"api",
+		"wrapper"
+	],
+	"homepage": "https://github.com/DevCraftClub/Webshare-Proxy",
+	"support": {
+		"email": "dev@devcraft.club",
+		"issues": "https://github.com/DevCraftClub/Webshare-Proxy/issues",
+		"forum": "https://devcraft.club",
+		"docs": "https://readme.devcraft.club/dev/api_wrappers/webshare-proxy/1.0.0/guides/english/"
+	},
+	"autoload": {
+		"psr-4": {
+			"Devcraft\\Webshare\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Devcraft\\Webshare\\Tests\\": "tests/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Maxim Harder",
+			"email": "dev@devcraft.club",
+			"role": "developer",
+			"homepage": "https://devcraft.club"
+		},
+		{
+			"name": "DevCraft",
+			"email": "admin@devcraft.club",
+			"role": "company",
+			"homepage": "https://devcraft.club"
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=8.3",
+		"guzzlehttp/guzzle": "^7.0 || ^8.0",
+		"vlucas/phpdotenv": "^5.6",
+		"marcin-orlowski/lombok-php": "^1.2",
+		"psr/log": "^3.0",
+		"analog/analog": "^1.0",
+		"symfony/cache": "^8.1",
+		"devcraftclub/dev-tools": "^1"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^11.0"
+	},
+	"scripts": {
+		"test": "phpunit"
+	}
+}
